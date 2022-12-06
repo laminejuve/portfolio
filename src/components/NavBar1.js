@@ -1,3 +1,7 @@
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Button from "@mui/material/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -13,8 +17,8 @@ function NavBar1() {
             <Navbar.Brand href="#home">
               <img
                 src={logo}
-                width="50"
-                height="50"
+                width="30"
+                height="30"
                 className="d-inline-block align-top"
                 alt=""
               />
@@ -25,10 +29,21 @@ function NavBar1() {
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
           <Nav className="me-auto navExtern">
-            <Nav.Link href="https://facebook.com">Facebook</Nav.Link>
-            <Nav.Link href="https://instagram.com">Instagram</Nav.Link>
-            <Nav.Link href="https://twitter.com">Twitter</Nav.Link>
-            <Nav.Link href="https://linkedin.com">LinkedIn</Nav.Link>
+            <Container className="socialMedia">
+              <Nav.Link href="https://facebook.com">
+                <FacebookIcon style={{ color: "white" }} />
+              </Nav.Link>
+              <Nav.Link href="https://instagram.com">
+                <InstagramIcon style={{ color: "white" }} />
+              </Nav.Link>
+              <Nav.Link href="https://twitter.com">
+                <TwitterIcon style={{ color: "white" }} />
+              </Nav.Link>
+              <Nav.Link href="https://linkedin.com">
+                <LinkedInIcon style={{ color: "white" }} />
+              </Nav.Link>
+            </Container>
+
             <Button variant="outlined" color="error">
               Hire me
             </Button>

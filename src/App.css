@@ -7,7 +7,7 @@
   background-color: black;
 }
 .header {
-  height : 7vh;
+  height : 9vh;
   background-color: rgb(20, 20, 20);
   display: flex;
   align-items: center;
@@ -26,10 +26,25 @@
   align-items: center;  
 }
 .navIntern{
-  width: 30vw;
+  width: 35vw;
+  
+}
+.navIntern > *{
+  color: white;
+  text-decoration: none;
+}
+.navIntern > *:hover{
+  color: rgb(241, 217, 186);
+
   
 }
 .navExtern{
   width: 30vw; 
 }
+.socialMedia{
+  width: 11vw;
+  display: flex;
+  justify-content:space-between;
+}
+
 
