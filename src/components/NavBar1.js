@@ -31,16 +31,40 @@ function NavBar1() {
           <Nav className="me-auto navExtern">
             <Container className="socialMedia">
               <Nav.Link href="https://facebook.com">
-                <FacebookIcon style={{ color: "white" }} />
+                <FacebookIcon
+                  sx={{
+                    color: "white",
+                    "&:hover": { color: "rgb(241, 217, 186)" },
+                    "&:active": { color: "orangered" },
+                  }}
+                />
               </Nav.Link>
               <Nav.Link href="https://instagram.com">
-                <InstagramIcon style={{ color: "white" }} />
+                <InstagramIcon
+                  sx={{
+                    color: "white",
+                    "&:hover": { color: "rgb(241, 217, 186)" },
+                    "&:active": { color: "orangered" },
+                  }}
+                />
               </Nav.Link>
               <Nav.Link href="https://twitter.com">
-                <TwitterIcon style={{ color: "white" }} />
+                <TwitterIcon
+                  sx={{
+                    color: "white",
+                    "&:hover": { color: "rgb(241, 217, 186)" },
+                    "&:active": { color: "orangered" },
+                  }}
+                />
               </Nav.Link>
               <Nav.Link href="https://linkedin.com">
-                <LinkedInIcon style={{ color: "white" }} />
+                <LinkedInIcon
+                  sx={{
+                    color: "white",
+                    "&:hover": { color: "rgb(241, 217, 186)" },
+                    "&:active": { color: "orangered" },
+                  }}
+                />
               </Nav.Link>
             </Container>
 
