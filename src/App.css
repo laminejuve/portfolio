@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-SemiBold.ttf") format("woff2"),
+    url("./fonts/Poppins/Poppins-Regular.ttf") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .App {
   text-align: center;
   
@@ -7,13 +22,26 @@
   background-color: black;
 }
 .header {
-  height : 9vh;
+  height : 7vh;
   background-color: rgb(20, 20, 20);
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-
+  position: fixed;
+  width: 100%;
+}
+.aboutMe{
+  height: 60vh;
+  background-color: rgb(20, 20, 20);
+}
+.projects {
+  height: 120vh;
+  background-color: black;
+}
+.contact{
+  height: 60vh;
+  background-color: rgb(20, 20, 20);
 }
 .navAll{
   display: flex;
@@ -26,20 +54,26 @@
   align-items: center;  
 }
 .navIntern{
-  width: 35vw;
-  
-}
-.navIntern > *{
-  color: white;
-  text-decoration: none;
-}
-.navIntern > *:hover{
-  color: rgb(241, 217, 186);
-
+  width: 30vw;
   
 }
 .navExtern{
   width: 30vw; 
+}
+.links{
+  width: 20vw;
+  display: flex;
+  justify-content:space-between;
+  
+}
+.links> *:hover{
+  color: rgb(241, 37, 115);
+}
+.links > *{
+  color: white;
+  text-decoration: none;
+  height: 2.5rem;
+  padding-top: 1rem;
 }
 
 .socialMedia{

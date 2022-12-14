@@ -10,23 +10,27 @@ import logo from "../assets/logo1.jpg";
 
 function NavBar1() {
   return (
-    <Container>
+    <Container id="navBar">
       <Navbar expand="lg" variant="light" bg="light">
         <Container className="navAll">
           <Nav className="me-auto navIntern">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#navBar">
               <img
                 src={logo}
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 className="d-inline-block align-top"
                 alt=""
               />
             </Navbar.Brand>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#project">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Container className="links">
+              <Nav.Link href="#home" id="test">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#aboutMe">About me</Nav.Link>
+              <Nav.Link href="#projects">Projects</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Container>
           </Nav>
           <Nav className="me-auto navExtern">
             <Container className="socialMedia">
@@ -34,8 +38,8 @@ function NavBar1() {
                 <FacebookIcon
                   sx={{
                     color: "white",
-                    "&:hover": { color: "rgb(241, 217, 186)" },
-                    "&:active": { color: "orangered" },
+                    "&:hover": { color: "rgb(241, 37, 115)" },
+                    "&:active": { color: "pink" },
                   }}
                 />
               </Nav.Link>
@@ -43,8 +47,8 @@ function NavBar1() {
                 <InstagramIcon
                   sx={{
                     color: "white",
-                    "&:hover": { color: "rgb(241, 217, 186)" },
-                    "&:active": { color: "orangered" },
+                    "&:hover": { color: "rgb(241, 37, 115)" },
+                    "&:active": { color: "pink" },
                   }}
                 />
               </Nav.Link>
@@ -52,8 +56,8 @@ function NavBar1() {
                 <TwitterIcon
                   sx={{
                     color: "white",
-                    "&:hover": { color: "rgb(241, 217, 186)" },
-                    "&:active": { color: "orangered" },
+                    "&:hover": { color: "rgb(241, 37, 115)" },
+                    "&:active": { color: "pink" },
                   }}
                 />
               </Nav.Link>
@@ -61,8 +65,8 @@ function NavBar1() {
                 <LinkedInIcon
                   sx={{
                     color: "white",
-                    "&:hover": { color: "rgb(241, 217, 186)" },
-                    "&:active": { color: "orangered" },
+                    "&:hover": { color: "rgb(241, 37, 115)" },
+                    "&:active": { color: "pink" },
                   }}
                 />
               </Nav.Link>

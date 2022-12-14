@@ -1,0 +1,19 @@
+.footer{
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .socialMediaFooter{
+    display: flex;
+    justify-content:space-between;
+    width: 20vw;
+
+  }
+  .copyright{
+    width: 40vw;
+    text-align: end;
+  }
